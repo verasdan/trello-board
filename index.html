@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="board todo">
+        <h3 class="board-title">To do</h3>
+
+        <ul id="dropTodo" ondrop="drop(event, this.id)"
+        
+        ondragover="allowDrop(event)">
+        
+        <li id="card1" class="card" draggable="true"
+        
+        ondragstart="drag(event)">
+        
+        <p>Lavar louça</p>
+        
+        <p class="remove"
+        
+        onclick="removeCard(this)">x</p>
+        
+        </li>
+        </ul>
+        </ul>
+        <div class="add-card" onclick="addCard(this)">
+        <p>Adicionar tarefa</p>
+        </div>
+        </div>
+        <div class="board doing">
+        <h3 class="board-title">Doing</h3>
+        
+        <ul id="dropDoing" ondrop="drop(event,
+        
+        this.id)" ondragover="allowDrop(event)">
+        
+        </ul>
+        </ul>
+        <div class="add-card" onclick="addCard(this)">
+        <p>Adicionar tarefa</p>
+        </div>
+        </div>
+        <div class="board done">
+        <h3 class="board-title">Done</h3>
+        <ul id="dropDone" ondrop="drop(event, this.id)"
+        
+        ondragover="allowDrop(event)">
+        
+        </ul>
+        </ul>
+        <div class="add-card" onclick="addCard(this)">
+            <p>Adicionar tarefa</p>
+        </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
